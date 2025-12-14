@@ -1,0 +1,92 @@
+{
+  "title": "Car",
+  "uid": "car",
+  "schema": [
+    {
+      "display_name": "Title",
+      "uid": "title",
+      "data_type": "text",
+      "mandatory": true,
+      "unique": false,
+      "field_metadata": {
+        "_default": true,
+        "description": ""
+      },
+      "multiple": false
+    },
+    {
+      "display_name": "Slug",
+      "uid": "slug",
+      "data_type": "text",
+      "mandatory": true,
+      "unique": true,
+      "field_metadata": {
+        "description": "URL-friendly identifier"
+      },
+      "multiple": false
+    },
+    {
+      "display_name": "Main Image",
+      "uid": "main_image",
+      "data_type": "file",
+      "mandatory": true,
+      "unique": false,
+      "field_metadata": {
+        "description": "Photo of the car"
+      },
+      "multiple": false
+    },
+    {
+      "display_name": "Description",
+      "uid": "description",
+      "data_type": "text",
+      "mandatory": true,
+      "unique": false,
+      "field_metadata": {
+        "allow_rich_text": true,
+        "description": "Details about the car",
+        "multiline": true,
+        "rich_text_type": "advanced"
+      },
+      "multiple": false
+    },
+    {
+      "display_name": "Year",
+      "uid": "year",
+      "data_type": "number",
+      "mandatory": false,
+      "unique": false,
+      "field_metadata": {
+        "description": "Year manufactured"
+      },
+      "multiple": false
+    },
+    {
+      "display_name": "Brand",
+      "uid": "brand",
+      "data_type": "text",
+      "display_type": "dropdown",
+      "mandatory": true,
+      "unique": false,
+      "field_metadata": {
+        "description": "Car brand",
+        "default_value": ""
+      },
+      "enum": {
+        "advanced": false,
+        "choices": [
+          { "value": "Hot Wheels" },
+          { "value": "Matchbox" },
+          { "value": "Other" }
+        ]
+      },
+      "multiple": false
+    }
+  ],
+  "options": {
+    "is_page": false,
+    "singleton": false,
+    "title": "title",
+    "sub_title": []
+  }
+}
